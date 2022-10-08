@@ -27,7 +27,7 @@ metadata = {
 for id in range(0, MAX_SUPPLY):
 
     # update data
-    metadata["name"] = "{} #{}".format(NAME, id)
+    metadata["name"] = "{} #{:02}".format(NAME, id)
     metadata["image"] = IMG.format(id)
     metadata["attributes"][0]["value"] = ".{:02}".format(id)
 
